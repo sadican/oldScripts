@@ -7,12 +7,13 @@ echo ">>> Installing git..."
 sudo apt-get install -y git-core git-gui git-doc
 echo ">>> Git was installed..."
 
-echo ">>> You need to generate an SSH key..."
 echo ">>> Please give me your e-mail address..."
 read email
+echo ">>> Generating SSH key..."
+echo ">>> Please write down the name of file with the path to that directory..."
 ssh-keygen -t rsa -C "$email"
 
-echo ">>> Now, go to ssh directory and open id_rsa.pub file,"
+echo ">>> Now, go to your specified directory and open SSH key file,"
 echo ">>> Copy everyting inside and paste to SSH Keys part of your github account..."
 echo ">>> When you done that press any key to continue..."
 read
