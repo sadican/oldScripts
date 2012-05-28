@@ -1,5 +1,7 @@
 #!/bin/sh
-# _ubuntu wireless card on-off script
+# Date: 28.05.2012
+# Author: sadican
+# Content: Xubuntu 12.04 wireless card auto-on script
 
 hard=$(rfkill list wlan | grep -c "Hard blocked: yes")
 soft=$(rfkill list wlan | grep -c "Soft blocked: yes")

@@ -1,4 +1,8 @@
 #!/bin/sh
+# Date: 28.05.2012
+# Author: sadican
+# Content: Xubuntu 12.04 screen resolution generation script for ASUS N61Jv
+
 # ekran çözünürlüğü hakkında bilgi almak için
 # cvt en boy yazarak gerekli bilgileri al
 echo "getting resolution information…"

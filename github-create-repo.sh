@@ -1,5 +1,7 @@
 #!/bin/sh
-# github setup script
+# Date: 28.05.2012
+# Author: sadican
+# Content: Github repository creation code
 
 echo ">>> Starting..."
 
