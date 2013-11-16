@@ -4,8 +4,8 @@
 message=""
 step=1
 iteration=1
-username="sadican"
-email="sadican09@gmail.com"
+username=""
+email=""
 
 # functions
 report () {
