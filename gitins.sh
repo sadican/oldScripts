@@ -66,14 +66,14 @@ fi
 report $flag "copy code to clipboard" $step
 
 if [ $step -eq $iteration ]; then
-    git config --global $USER $username
+    git config --global user.name $username
     flag=$?
 fi
 
 report $flag "set default name for git" $step
 
 if [ $step -eq $iteration ]; then
-    git config --global $email $email
+    git config --global user.email $email
     flag=$?
 fi
 
