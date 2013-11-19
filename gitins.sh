@@ -47,10 +47,16 @@ fi
 report $flag "set passphrase" $step
 
 if [ $step -eq $iteration ]; then
-    mv/home/$USER/github/git_id /home/$USER/.ssh/
+    mv /home/$USER/github/git_id /home/$USER/.ssh/
     flag=$?
 fi
 report $flag "move RSA file" $step
+
+if [ $step -eq $iteration ]; then
+    mv /home/$USER/github/git_id.pub /home/$USER/.ssh/
+    flag=$?
+fi
+report $flag "move PUB file" $step
 
 if [ $step -eq $iteration ]; then
     sudo apt-get install -y xclip
