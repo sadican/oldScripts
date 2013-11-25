@@ -1,5 +1,5 @@
 mininetTest() {
-    sudo mn --custom /home/$USER/github/ranet/$1.py --topo $1 --test pingall --controller=remote,ip=127.0.0.1,port=6633
+    java -jar /home/$USER/floodlight/target/floodlight.jar && sudo mn --custom /home/$USER/github/ranet/$1.py --topo $1 --test pingall --controller=remote,ip=127.0.0.1,port=6633
 }
 
 gitUpdate() {
