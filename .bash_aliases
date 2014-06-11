@@ -1,5 +1,5 @@
 mininetTest() {
-    java -jar /home/$USER/floodlight/target/floodlight.jar && sudo mn --custom /home/$USER/github/ranet/$1.py --topo $1 --test pingall --controller=remote,ip=127.0.0.1,port=6633
+    java -jar /home/$USER/SDN/floodlight/target/floodlight.jar && sudo mn --custom /home/$USER/github/ranet/$1.py --topo $1 --test pingall --controller=remote,ip=127.0.0.1,port=6633
 }
 
 gitUpdate() {
@@ -13,18 +13,18 @@ alias install='sudo apt-get install'
 alias shutdown='sudo shutdown -h now'
 
 alias renameSim='rm netsim.py && mv netsim.py.1 netsim.py'
-alias minEx='cd /home/$USER/mininet/examples'
+alias minEx='cd /home/$USER/SDN/mininet/examples'
 
 alias add='git add'
 alias commit='git commit -m'
 alias pull='git pull'
 alias status='git status'
 alias push='git push'
-alias remoteadd='git remote add origin https://github.com/sadican/ranet'
+alias radd='git remote add origin https://github.com/sadican/ranet'
 alias gitup=gitUpdate
-alias cdfloodlight='cd /home/$USER/floodlight/'
+alias cdfl='cd /home/$USER/SDN/floodlight/'
 alias cdranet='cd /home/$USER/github/ranet/'
 alias cddebshell='cd /home/$USER/github/debshell/'
 alias cdranet='cd /home/$USER/github/ranet/'
-alias runfloodlight='java -jar /home/$USER/floodlight/target/floodlight.jar'
+alias runfl='java -jar /home/$USER/SDN/floodlight/target/floodlight.jar'
 alias mntest=mininetTest
